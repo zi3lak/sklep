@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='santa-logo.png') }}" alt="Logo Mikołaja" class="santa-logo">
+        <h2>Christmas sale!</h2>
+    </header>
+    <h1>Welcome to the Christmas Shop</h1>
+    <div class="products-list">
+        {% for product in products %}
+            <div class="product-item">
+                <img src="{{ url_for('static', filename='products/' + product.image) }}" alt="{{ product.name }}" class="product-image">
+                <p>{{ product.name }}</p>
+                <h1><a href="{{ url_for('product_details', product_id=product.id) }}">Price: {{ product.price }} £</a></h1>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+
+
+

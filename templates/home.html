@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona Główna Sklepu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Dodaj tutaj linki do dodatkowych arkuszy stylów lub skryptów, jeśli są potrzebne -->
+</head>
+<body>
+    <header>
+        <h1>Witaj w Naszym Sklepie!</h1>
+        <!-- Możesz tutaj dodać nawigację lub logo -->
+    </header>
+    
+    <nav>
+        <!-- Linki do innych stron -->
+        <ul>
+            <li><a href="{{ url_for('list_products') }}">Produkty</a></li>
+            <li><a href="{{ url_for('add_product') }}">Dodaj Produkt</a></li>
+            <!-- Dodaj więcej linków, jeśli są potrzebne -->
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Treść główna twojej strony -->
+        <p>Przeglądaj nasze produkty i znajdź coś dla siebie!</p>
+    </main>
+    
+    <footer>
+        <!-- Stopka strony z informacjami o prawach autorskich, kontakcie itp. -->
+        <p>&copy; 2023 Sklep Wszystkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>

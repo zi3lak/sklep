@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <p>{{ product.name }}</p>
+    <h1>Christmas Price: {{ product.price }} £</h1>
+    <p>Transfer the appropriate amount to the following account:</p>
+    <p>Account number: {{ account_details.account_number }}</p>
+    <p>Bank name: {{ account_details.bank_name }}</p>
+    <p>recipient's name: {{ account_details.recipient_name }}</p>
+    <!-- Tutaj możesz dodać więcej danych do przelewu -->
+    <a href="{{ url_for('index') }}">Back to list

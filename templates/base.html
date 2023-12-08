@@ -1,0 +1,23 @@
+<!-- base.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mój Sklep{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Dodaj inne wspólne metatagi, arkusze stylów, skrypty -->
+</head>
+<body>
+    <header>
+        <!-- Tutaj można umieścić logo Mikołaja i ogłoszenie o wyprzedaży -->
+    </header>
+    
+    {% block content %}
+    <!-- Zawartość specyficzna dla strony będzie tutaj wstawiona -->
+    {% endblock %}
+    
+    <footer>
+        <!-- Stopka strony -->
+    </footer>
+</body>
+</html>

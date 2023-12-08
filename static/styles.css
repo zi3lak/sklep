@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Minimalna wysokość widoku, aby cała zawartość była zawsze wyśrodkowana */
+    flex-direction: column; /* Ustawia kierunek główny na pionowy */
+    margin: 0; /* Usuwa domyślne marginesy */
+    #background: #ecb7b7; /* Dark background */
+    #color: #f4f4f4; /* Lighter text for better contrast */
+    #font-family: 'Roboto', sans-serif; /* Apply the 'Roboto' font */
+  }
+  
+  .container {
+    width: 80%; /* Ustaw szerokość kontenera, dostosuj do swoich potrzeb */
+    max-width: 1200px; /* Maksymalna szerokość kontenera, dostosuj do swoich potrzeb */
+  }
+  
+  .products-list {
+    display: flex;
+    flex-wrap: wrap; /* Umożliwia zawijanie elementów, gdy nie mieszczą się w jednym rzędzie */
+    justify-content: center; /* Wyśrodkowuje produkty w kontenerze */
+    gap: 20px; /* Ustawia odstępy między produktami */
+  }
+  
+  .product-item {
+    width: calc(25% - 20px); /* Przykład dla trzech produktów na rzędzie, odjąć odstęp */
+    margin: 10px; /* Ustawia marginesy wokół każdego produktu */
+  }
+  
+  /* Odpowiednie style dla obrazków produktów, aby były mniejsze */
+  .product-image {
+    width: 50%; /* Ustawia szerokość obrazka na 100% kontenera .product-item */
+    height: auto; /* Ustawia wysokość automatycznie proporcjonalnie do szerokości */
+    border-radius: 4px; /* Opcjonalnie, doda zaokrąglenie narożników */
+  }
+  
+  .santa-logo {
+    height: 320px; /* lub inny wymiar, zależnie od potrzeb */
+    width: auto; /* zachowuje proporcje obrazka */
+    margin: 0 10px; /* daje odstęp od innych elementów, jeśli to konieczne */
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center; /* wyśrodkowanie poziome */
+    align-items: center; /* wyśrodkowanie pionowe */
+  }
+  p {
+    font-size: 18px; /* Ustawia rozmiar czcionki na 18 pikseli */
+  }
+  .product-name {
+    font-size: 24px; /* Zwiększa rozmiar czcionki dla nazw produktów */
+  }
+  
+  .description {
+    font-size: 16px; /* Zwiększa rozmiar czcionki dla opisów */
+  }
+  
+  /* Jeśli masz nagłówek lub inny tekst, którego rozmiar chcesz zmienić */
+  h1, h2, h3 {
+    font-size: 2rem; /* Responsive font size */
+  }
+

@@ -1,0 +1,20 @@
+Starting to install OpenLiteSpeed to /usr/local/lsws/ with the parameters below,
+WebAdmin Console URL:     https://176.58.114.247:7080
+WebAdmin username:        admin
+WebAdmin password:        5Z8xGglxB3Y9GWvf
+WebAdmin email:           root@localhost
+LSPHP version:            81
+MariaDB version:          10.11
+Install WordPress:        Yes
+WordPress HTTP port:      80
+WordPress HTTPS port:     443
+WordPress language:       en_US
+Web site domain:          *
+MySQL root Password:      ac078ea144edb587123f7564a5a5cfc91caab582cf96a51c
+Database name:            wordpress
+Database username:        wordpress
+Database password:        wordpress
+WordPress plus:           No
+WordPress location:       /var/www/html.old (Exsiting)
+Your password will be written to file:  /usr/local/lsws/password
+http://shop.wisehometechnologies.co.uk
